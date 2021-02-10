@@ -128,8 +128,7 @@ RE_BASIC_INSERT_STAT = (
     u"\\s+VALUES\\s*\\(\\s*(?P<values>(.|\\s)*)\\s*\\)").format(RE_NAME)
 END_OF_RESULT_RESPONSES = (messages.CommandComplete, messages.PortalSuspended)
 END_OF_BATCH_RESPONSES = (messages.WriteFile, messages.EndOfBatchResponse)
-DEFAULT_BUFFER_SIZE = 131072
-
+DEFAULT_BUFFER_SIZE = 1048576
 
 class Cursor(object):
     # NOTE: this is used in executemany and is here for pandas compatibility
